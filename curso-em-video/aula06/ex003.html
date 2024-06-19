@@ -15,10 +15,10 @@
     <h1>Ola,Mundo!</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius voluptates placeat illo error cumque, aperiam, eaque minus corporis id ab vero dicta praesentium magnam, voluptatum neque autem natus alias impedit!</p>
     <script>
-       var n1 = Number.parseInt(window.prompt('Digite um numero: '))
-       var n2 = Number.parseInt( window.prompt('Digite outro numero: '))
+       var n1 = Number(window.prompt('Digite um numero: '))
+       var n2 = Number(window.prompt('Digite outro numero: '))
        var s = n1 + n2
-       window.alert('A soma dos valores é :' + s) // concatenação
+       window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // concatenação
        //(number + numer) para adição
        //(string+string) para concatenação
     </script>
