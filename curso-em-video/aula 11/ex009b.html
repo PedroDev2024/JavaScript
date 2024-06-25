@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do país.</title>
+    <style>
+        body{
+            font: normal 18 px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Voce nasceu em que país? : <input type="input" name="txtpa" id="txtpa">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+<script>
+    function calcular() {
+        var txtp = window.document.querySelector('input#txtpa')
+        res.innerHTML += `<p>Voce é natural de <strong>${txtp}</strong>!!</p>`
+    
+        if (txtp != 'Brasil') {
+            res.innerHTML += '<p>Você é Brasileiro !!!!<p>'
+        } else{
+        res.innerHTML = '<p>Você é Estrangeiro!!!<p>'
+        }
+    }
+</script>
+
+</body>
+</html>
