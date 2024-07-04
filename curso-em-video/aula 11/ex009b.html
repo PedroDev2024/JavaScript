@@ -12,20 +12,21 @@
 </head>
 <body>
     <h1>Sistema de Nacionalidade</h1>
-    Voce nasceu em que país? : <input type="input" name="txtpa" id="txtpa">
+    Voce nasceu em que país? : <input type="text" name="txtpa" id="txtpa">
     <input type="button" value="Verificar" onclick="calcular()">
     <div id="res">
 
     </div>
 <script>
     function calcular() {
-        var txtp = window.document.querySelector('input#txtpa')
-        res.innerHTML += `<p>Voce é natural de <strong>${txtp}</strong>!!</p>`
+        var txtp = window.document.querySelector('input#txtpa').value
+        var res = window.document.querySelector('div#res')
+        res.innerHTML += `<p>Voce é natural de <strong>${txtp}</strong> !!</p>`
     
-        if (txtp != 'Brasil') {
+        if (txtpa.value.toLowerCase() == 'brasil') {
             res.innerHTML += '<p>Você é Brasileiro !!!!<p>'
-        } else{
-        res.innerHTML = '<p>Você é Estrangeiro!!!<p>'
+        } else {
+        res.innerHTML += '<p>Você é Estrangeiro!!!<p>'
         }
     }
 </script>
